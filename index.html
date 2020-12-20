@@ -2,38 +2,44 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>YourApp Dashboard</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-
-      </div>
-      <div class="notifications">
-        <img src="icons/icon-bell.svg" alt="notification bell">
-      </div>
-      <div class="user-profile">
-        <img src="images/IMG_0918.jpeg" class ="user-image" alt="user profile image">
-        <p class="user-name">Bradley Parker</p>
+      <span class="logo-text"><span class="bold">Your</span><span>App</span><sup>TM</sup></span>
+      <div class="notification-area">
+        <div class="notification-bell">
+          <img src="icons/icon-bell.svg" class="notification" alt="notification bell">
+          <span class="notified">•</span>
+        </div>
+        <div class="profile">
+          <img src="images/IMG_0918.jpeg" class ="user-image profile-image" alt="user profile image">
+          <span class="user-name">Bradley Parker</span>
+        </div>
       </div>
     </header>
     <main>
-      <nav class="sidebar">
-
-      </nav>
+      <div class="sidenav">
+        <div class="sidenav-item"><img src="icons/icon-dashboard.svg" alt="dashboard icon"></div>
+        <div class="sidenav-item"><img src="icons/icon-members.svg" alt="members icon"></div>
+        <div class="sidenav-item"><img src="icons/icon-visits.svg" alt="visits icon"></div>
+        <div class="sidenav-item"><img src="icons/icon-settings.svg" alt="settings icon"></div>
+      </div>
       <div class="dashboard">
-        <div class="tab-search">
+        <div class="tab-and-search">
           <div class="tab">
             <h1>Dashboard</h1>
           </div>
-          <div class="search">
-            <input type="text" name="search" id="search" placeholder="Search...">
-          </div>
+            <div class="search">
+              <input type="text" name="search" id="search" placeholder="Search...">
+            </div>
         </div>
         <div class="alerts">
-          <p class="alert-text"><strong>Alert</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p class="alert-close">x</p>
+          <p class="alert-text"><span class="bold">Alert</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="alert-close bold">x</p>
         </div>
         <div class="chart">
           <div class="chart-controls">
@@ -47,6 +53,7 @@
               <h3 class="control-metric">Monthly</h3>
             </div>
           </div>
+          <canvas id="trafficChart"></canvas>
         </div>
         <div class="summary-stats">
           <div class="daily-traffic">
@@ -75,7 +82,7 @@
             <h2>NEW MEMBERS</h2>
             <div class="feed">
               <div class="feed-item">
-                <img src="images/member-1.jpg" alt="member 1">
+                <img src="images/member-1.jpg" class ="user-image" alt="member 1">
                 <div class="feed-item-details">
                   <p class="feed-item-detail">Victoria Chambers</p>
                   <p class="email"><a mailto="victoria.chambers80@example.com">victoria.chambers80@example.com</a></p>
@@ -85,7 +92,7 @@
                 </div>
               </div>
               <div class="feed-item">
-                <img src="images/member-2.jpg" alt="member 2">
+                <img src="images/member-2.jpg" class ="user-image" alt="member 2">
                 <div class="feed-item-details">
                   <p class="feed-item-detail">Dale Byrd</p>
                   <p class="email"><a mailto="dale.byrd52@example.com">dale.byrd52@example.com</a></p>
@@ -95,7 +102,7 @@
                 </div>
               </div>
               <div class="feed-item">
-                <img src="images/member-3.jpg" alt="member 3">
+                <img src="images/member-3.jpg" class ="user-image" alt="member 3">
                 <div class="feed-item-details">
                   <p class="feed-item-detail">Dawn Wood</p>
                   <p class="email"><a mailto="dawn.wood16@example.com">dawn.wood16@example.com</a></p>
@@ -105,7 +112,7 @@
                 </div>
               </div>
               <div class="feed-item">
-                <img src="images/member-4.jpg" alt="member 4">
+                <img src="images/member-4.jpg" class ="user-image" alt="member 4">
                 <div class="feed-item-details">
                   <p class="feed-item-detail">Dan Oliver</p>
                   <p class="email"><a mailto="dan.oliver82@example.com">dan.oliver82@example.com</a></p>
@@ -120,7 +127,7 @@
             <h2>RECENT ACTIVITY</h2>
             <div class="feed">
               <div class="feed-item">
-                <img src="images/member-1.jpg" alt="member 1">
+                <img src="images/member-1.jpg" class ="user-image" alt="member 1">
                 <div class="feed-item-details">
                   <p class="feed-item-detail">Victoria Chambers commented on Your App's SEO Tips</p>
                 </div>
@@ -129,7 +136,7 @@
                 </div>
               </div>
               <div class="feed-item">
-                <img src="images/member-2.jpg" alt="member 2">
+                <img src="images/member-2.jpg" class ="user-image" alt="member 2">
                 <div class="feed-item-details">
 
                 </div>
@@ -138,7 +145,7 @@
                 </div>
               </div>
               <div class="feed-item">
-                <img src="images/member-3.jpg" alt="member 3">
+                <img src="images/member-3.jpg" class ="user-image" alt="member 3">
                 <div class="feed-item-details">
 
                 </div>
@@ -147,7 +154,7 @@
                 </div>
               </div>
               <div class="feed-item">
-                <img src="images/member-4.jpg" alt="member 4">
+                <img src="images/member-4.jpg" class ="user-image" alt="member 4">
                 <div class="feed-item-details">
 
                 </div>
@@ -172,7 +179,8 @@
       </div>
     </main>
     <footer>
-
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+      <script src="js/traffic.js"></script>
     </footer>
   </body>
 </html>

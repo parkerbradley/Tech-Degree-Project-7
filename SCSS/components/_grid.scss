@@ -1,0 +1,10 @@
+main,
+.summary-stats,
+.social-stats,
+.member-activity {
+  display: grid;
+}
+
+main {
+  grid-template-columns: 55px auto;
+}

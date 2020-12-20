@@ -1,0 +1,56 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.notification-area,
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  @include flex-between;
+  height: 50px;
+  background-color: $header;
+}
+
+.notification {
+  height: 15px;
+}
+
+.notification-bell {
+  position: relative;
+  margin-right: $right-body;
+}
+.notified {
+  position: absolute;
+  top: -12px;
+  right: -2.75px;
+  color: $notification;
+  font-size: 20px;
+}
+
+.profile {
+  border-left: solid 2px $primary-dark;
+}
+
+.profile-image {
+  margin-right: 10px;
+}
+
+.logo-text,
+.profile {
+  padding-left: $left-body;
+}
+
+.logo-text,
+.user-name {
+  color: $white;
+}
+
+.user-name {
+  font-size: $primary-font-size;
+}
+
+.notification-area {
+  padding-right: $right-body;
+}
