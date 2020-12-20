@@ -17,12 +17,17 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
-      aspectRatio: 4,
+      aspectRatio: 3.8,
       scales: {
         yAxes: [{
         ticks: {
           beginAtZero: true
           }
+        }],
+        xAxes: [{
+          gridLines: {
+                //borderDashOffset: 1
+            }
         }]
       },
       legend: {
