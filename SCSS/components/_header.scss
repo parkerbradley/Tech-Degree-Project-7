@@ -23,7 +23,7 @@ header {
 
 .notification-bell {
   position: relative;
-  margin-right: $right-body;
+  margin-right: $body-space;
 }
 .notified {
   position: absolute;
@@ -43,7 +43,7 @@ header {
 
 .logo-text,
 .profile {
-  padding-left: $left-body;
+  padding-left: $body-space;
 }
 
 .logo-text,
@@ -56,5 +56,5 @@ header {
 }
 
 .notification-area {
-  padding-right: $right-body;
+  padding-right: $body-space;
 }

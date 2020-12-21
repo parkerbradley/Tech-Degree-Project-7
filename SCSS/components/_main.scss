@@ -31,10 +31,10 @@
   align-items: center;
   height: 70px;
   border-top-right-radius: 5px;
-  padding-left: $left-body;
-  padding-right: $right-body;
+  padding-left: $body-space;
+  padding-right: $body-space;
   background-color: $white;
-  border-right: solid 1px $border;
+  border-right: $border-style;
 }
 
 // --- Search bar
@@ -45,20 +45,20 @@
   align-items: center;
   width: 100%;
   height: 70px;
-  border-bottom: solid 1px $border;
+  border-bottom: $border-style;
   margin: auto 0;
 }
 
 .search input {
   width: 40%;
   height: 45px;
-  padding-left: $left-body;
+  padding-left: $body-space;
   outline-color: $border;
-  margin-right: $right-body;
+  margin-right: $body-space;
   font-weight: 600;
   outline: none;
   border-radius: 5px;
-  border: 1px solid $border;
+  border: $border-style;
 }
 
 ::placeholder {
@@ -67,7 +67,7 @@
 
 //----------- Alert -----------//
 .alerts {
-  margin: 20px $left-body 20px $right-body;
+  margin: $body-space;
   padding: 15px;
   height: 45px;
   border-radius: 5px;
@@ -83,6 +83,12 @@
 }
 
 //----------- Charts & Period Toggles -----------//
+canvas {
+  padding-top: $body-space;
+  padding-bottom: $body-space;
+}
+
+// --- Traffic
 .chart-controls {
   @include flex-between;
 }
@@ -98,6 +104,19 @@
 }
 
 .chart {
-  padding-left: $left-body;
-  padding-right: $right-body;
+  padding-left: $body-space;
+  padding-right: $body-space;
+  border-bottom: $border-style;
+}
+
+// --- Daily Traffic & Mobile Users
+.daily-traffic,
+.mobile-users {
+  padding: $body-space;
+  padding-bottom: 0;
+  border-bottom: $border-style;
+}
+
+.daily-traffic {
+  border-right: $border-style;
 }

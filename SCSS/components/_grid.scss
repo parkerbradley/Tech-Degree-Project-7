@@ -8,3 +8,11 @@ main,
 main {
   grid-template-columns: 75px auto;
 }
+
+.summary-stats {
+  grid-template-columns: 1fr 1fr;
+}
+
+.social-stats {
+  grid-template-columns: 1fr 1fr 1fr;
+}
