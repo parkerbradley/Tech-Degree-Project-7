@@ -156,7 +156,7 @@ var chart = new Chart(ctx, {
         position: 'right',
         labels: {
           fontSize: 18,
-          fontColor: '#ACACAC',
+          fontColor: '#5A5A5A',
           boxWidth: 30,
           padding: 30
         }

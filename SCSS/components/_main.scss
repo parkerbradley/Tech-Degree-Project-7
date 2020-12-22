@@ -120,3 +120,68 @@ canvas {
 .daily-traffic {
   border-right: $border-style;
 }
+
+//----------- Social Stats -----------//
+.social-stats-block {
+  padding: $body-space;
+}
+
+.social-stats-block h2 {
+  padding-bottom: $body-space;
+}
+
+.social-card {
+  display: inline-flex;
+  align-items: center;
+  padding: $body-space;
+  background-color: $background-gray;
+  border: $border-style;
+  border-radius: 5px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  background: $primary-color;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: $body-space;
+  img {
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    color: $white;
+  }
+}
+
+.social-platform,
+.social-stat {
+  padding: 0;
+  margin: 0;
+}
+
+.social-platform {
+  font-weight: 500;
+  color: $primary-color;
+  font-size: 20px;
+}
+
+.social-stat {
+  font-size: 40px;
+  color: $primary-font;
+}
+
+//----------- Member Activity -----------//
+.member-activity {
+  margin-top: $body-space;
+  border-top: $border-style;
+}
+
+.column {
+  padding: $body-space;
+  :nth-child(1) {
+    border-right: $border-style;
+  }
+}

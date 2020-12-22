@@ -1,6 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+  max-width: 1500px;
+  background-color: $header;
+  margin: auto;
+}
+
 body {
   margin: 0;
+  background-color: $white;
 }

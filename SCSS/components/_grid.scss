@@ -15,4 +15,9 @@ main {
 
 .social-stats {
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+}
+
+.member-activity {
+  grid-template-columns: 1fr 1fr;
 }
