@@ -2,13 +2,27 @@
 @import '../utilities/mixins';
 
 //----------- Tab & Search Area -----------//
+.sidenav,
+.dashboard {
+  padding-bottom: $body-space;
+}
 
 .sidenav-item {
-  padding: 22px;
+  display: inline-block;
+  padding: $body-space-mobile;
+
+  @include tablet {
+    display: block;
+    padding: 22px;
+  }
 }
 
 .sidenav-item img{
   opacity: 70%;
+  width: 45px;
+  @include tablet {
+    width: auto;
+  }
 }
 
 .sidenav-item:first-child {
@@ -89,23 +103,27 @@ canvas {
 }
 
 // --- Traffic
-.chart-controls {
-  @include flex-between;
+@include tablet {
+  .chart-controls {
+    @include flex-between;
+  }
 }
 
 .controls h3 {
   display: inline;
 }
 
-.controls {
-  display: flex;
-  justify-content: space-between;
-  width: 350px;
+
+
+@include tablet {
+  .controls {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .chart {
-  padding-left: $body-space;
-  padding-right: $body-space;
   border-bottom: $border-style;
 }
 
@@ -144,15 +162,19 @@ canvas {
   align-items: center;
   background: $primary-color;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   margin-right: $body-space;
   img {
-    height: 45px;
+    height: 23px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
     color: $white;
+  }
+  @include tablet {
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -165,23 +187,130 @@ canvas {
 .social-platform {
   font-weight: 500;
   color: $primary-color;
-  font-size: 20px;
+  font-size: 16px;
+  @include tablet {
+    font-size: 20px;
+  }
 }
 
 .social-stat {
-  font-size: 40px;
+  font-size: 25px;
   color: $primary-font;
+  @include tablet {
+    font-size: 40px;
+  }
 }
 
 //----------- Member Activity -----------//
 .member-activity {
   margin-top: $body-space;
   border-top: $border-style;
+  background-color: $border;
 }
 
 .column {
-  padding: $body-space;
-  :nth-child(1) {
-    border-right: $border-style;
-  }
+  background-color: $white;
+}
+
+.feed,
+.column h2 {
+  padding-right: $body-space;
+  padding-left: $body-space;
+}
+
+.column h2 {
+  padding-top: $body-space;
+  padding-bottom: $body-space;
+}
+
+.feed {
+  border-bottom: $border-style;
+}
+
+.feed-item {
+  display: flex;
+  align-items: center;
+  padding-top: ($body-space * .5);
+  padding-bottom: ($body-space * .5);
+  border-bottom: $border-style;
+}
+
+.feed-item:first-of-type {
+  padding-top: 0;
+}
+
+.feed-item:last-of-type {
+  border: none;
+  padding-bottom: $body-space;
+}
+
+.feed-item-text {
+  @include flex-between;
+  width: 100%;
+  height: 35px;
+}
+
+.user-image {
+  margin-right: 15px;
+}
+
+.feed-subtext,
+.feed-item-right {
+  color: $primary-font;
+  font-size: 13px;
+}
+
+// --- activity forms
+.message-user {
+  padding-left: $body-space;
+  padding-right: $body-space;
+}
+
+.message-user input,
+.message-user textarea,
+.message-user button {
+  display: block;
+  width: 100%;
+  padding-left: $body-space;
+  outline-color: $border;
+  margin-right: $body-space;
+  font-weight: 600;
+  outline: none;
+  border-radius: 5px;
+}
+
+.message-user input,
+.message-user button {
+  height: 45px;
+}
+
+.message-user textarea {
+  padding-top: ($body-space * .5);
+  height: 90px;
+}
+
+.message-user input,
+.message-user textarea {
+  margin-bottom: ($body-space * .5);
+  border: $border-style;
+}
+
+.message-user button {
+  background-color: $primary-color;
+  border: none;
+  color: $white;
+}
+
+.toggle-area {
+  margin-left: $body-space;
+  margin-right: $body-space;
+}
+
+.switch-light {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.switch-light:first-of-type {
+  margin-bottom: $body-space;
 }

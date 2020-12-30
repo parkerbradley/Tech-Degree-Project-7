@@ -2,8 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" />
     <link rel="stylesheet" href="css/styles.css">
     <title>YourApp Dashboard</title>
   </head>
@@ -38,8 +40,8 @@
             </div>
         </div>
         <div class="alerts">
-          <p class="alert-text"><span class="bold">Alert</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p class="alert-close bold">x</p>
+          <span class="alert-text"><span class="bold">Alert</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+          <span class="alert-close bold">x</span>
         </div>
         <div class="chart">
           <div class="chart-controls">
@@ -104,42 +106,50 @@
               <div class="feed">
                 <div class="feed-item">
                   <img src="images/member-1.jpg" class ="user-image" alt="member 1">
-                  <div class="feed-item-details">
-                    <p class="feed-item-detail">Victoria Chambers</p>
-                    <p class="email"><a mailto="victoria.chambers80@example.com">victoria.chambers80@example.com</a></p>
-                  </div>
-                  <div class="feed-item-right">
-                    <p class="date">10/15/2020</p>
+                  <div class="feed-item-text">
+                    <div class="feed-item-details">
+                      <p class="feed-item-detail">Victoria Chambers</p>
+                      <p class="feed-subtext"><a mailto="victoria.chambers80@example.com">victoria.chambers80@example.com</a></p>
+                    </div>
+                    <div class="feed-item-right">
+                      <p class="date">10/15/2020</p>
+                    </div>
                   </div>
                 </div>
                 <div class="feed-item">
                   <img src="images/member-2.jpg" class ="user-image" alt="member 2">
-                  <div class="feed-item-details">
-                    <p class="feed-item-detail">Dale Byrd</p>
-                    <p class="email"><a mailto="dale.byrd52@example.com">dale.byrd52@example.com</a></p>
-                  </div>
-                  <div class="feed-item-right">
-                    <p class="date">10/15/2020</p>
+                  <div class="feed-item-text">
+                    <div class="feed-item-details">
+                      <p class="feed-item-detail">Dale Byrd</p>
+                      <p class="feed-subtext"><a mailto="dale.byrd52@example.com">dale.byrd52@example.com</a></p>
+                    </div>
+                    <div class="feed-item-right">
+                      <p class="date">10/15/2020</p>
+                    </div>
                   </div>
                 </div>
                 <div class="feed-item">
                   <img src="images/member-3.jpg" class ="user-image" alt="member 3">
-                  <div class="feed-item-details">
-                    <p class="feed-item-detail">Dawn Wood</p>
-                    <p class="email"><a mailto="dawn.wood16@example.com">dawn.wood16@example.com</a></p>
-                  </div>
-                  <div class="feed-item-right">
-                    <p class="date">10/15/2020</p>
+                  <div class="feed-item-text">
+                    <div class="feed-item-details">
+                      <p class="feed-item-detail">Dawn Wood</p>
+                      <p class="feed-subtext"><a mailto="dawn.wood16@example.com">dawn.wood16@example.com</a></p>
+                    </div>
+                    <div class="feed-item-right">
+                      <p class="date">10/15/2020</p>
+                    </div>
                   </div>
                 </div>
                 <div class="feed-item">
                   <img src="images/member-4.jpg" class ="user-image" alt="member 4">
-                  <div class="feed-item-details">
-                    <p class="feed-item-detail">Dan Oliver</p>
-                    <p class="email"><a mailto="dan.oliver82@example.com">dan.oliver82@example.com</a></p>
-                  </div>
-                  <div class="feed-item-right">
-                    <p class="date">10/15/2020</p>
+                  <div class="feed-item-text">
+                    <div class="feed-item-details">
+                      <p class="feed-item-detail">Dan Oliver</p>
+                      <p class="feed-subtext"><a mailto="dan.oliver82@example.com">dan.oliver82@example.com</a></p>
+                    </div>
+                    <div class="feed-item-right">
+                      <p class="date">10/15/2020</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -159,37 +169,49 @@
               <div class="feed">
                 <div class="feed-item">
                   <img src="images/member-1.jpg" class ="user-image" alt="member 1">
-                  <div class="feed-item-details">
-                    <p class="feed-item-detail">Victoria Chambers commented on Your App's SEO Tips</p>
-                  </div>
-                    <div class="feed-item-right">
+                  <div class="feed-item-text">
+                    <div class="feed-item-details">
+                      <p class="feed-item-detail">Victoria Chambers commented on Your App's SEO Tips</p>
+                      <span class="feed-subtext">4 hours ago</span>
+                    </div>
+                      <div class="feed-item-right">
+                      </div>
                   </div>
                 </div>
                 <div class="feed-item">
                   <img src="images/member-2.jpg" class ="user-image" alt="member 2">
-                  <div class="feed-item-details">
+                  <div class="feed-item-text">
+                    <div class="feed-item-details">
+                      <p class="feed-item-detail">Dale Byrd liked the post Facebook's Changes for 2016</p>
+                      <span class="feed-subtext">5 hours ago</span>
+                    </div>
+                    <div class="feed-item-right">
 
-                  </div>
-                  <div class="feed-item-right">
-
+                    </div>
                   </div>
                 </div>
                 <div class="feed-item">
                   <img src="images/member-3.jpg" class ="user-image" alt="member 3">
-                  <div class="feed-item-details">
+                  <div class="feed-item-text">
+                    <div class="feed-item-details">
+                      <p class="feed-item-detail">Dawn Wood commented on Facebook's Changes for 2016</p>
+                      <span class="feed-subtext">5 hours ago</span>
+                    </div>
+                    <div class="feed-item-right">
 
-                  </div>
-                  <div class="feed-item-right">
-
+                    </div>
                   </div>
                 </div>
                 <div class="feed-item">
                   <img src="images/member-4.jpg" class ="user-image" alt="member 4">
-                  <div class="feed-item-details">
+                  <div class="feed-item-text">
+                    <div class="feed-item-details">
+                      <p class="feed-item-detail">Dan Oliver posted YourApp's SEO Tips</p>
+                      <span class="feed-subtext">1 day ago</span>
+                    </div>
+                    <div class="feed-item-right">
 
-                  </div>
-                  <div class="feed-item-right">
-
+                    </div>
                   </div>
                 </div>
               </div>
@@ -197,6 +219,34 @@
 
             <div class="member-settings">
               <h2>SETTINGS</h2>
+              <div class="toggle-area">
+                <div class="toggle">
+                  <label class="switch-light switch-material">
+                    <input type="checkbox">
+
+                    <p>Send Email Notification</p>
+
+                    <span class="toggle-switch">
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                  </label>
+                </div>
+                <div class="toggle">
+                  <label class="switch-light switch-material">
+                    <input type="checkbox">
+
+                    <p>Set Profile To Public</p>
+
+                    <span class="toggle-switch">
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
         </div>

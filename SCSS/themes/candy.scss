@@ -1,0 +1,40 @@
+@import '../utilities/variables';
+
+/* Candy Theme
+ * Based on the "Sort Switches / Toggles (PSD)" by Ormal Clarck
+ * http://www.premiumpixels.com/freebies/sort-switches-toggles-psd/
+ */
+.switch-toggle.switch-candy,
+.switch-light.switch-candy > span {
+  background-color: $background-gray;
+  border-radius: 50%;
+}
+
+.switch-light.switch-candy span span,
+.switch-light.switch-candy input:checked ~ span span:first-child,
+.switch-toggle.switch-candy label {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.switch-light.switch-candy input ~ span span:first-child,
+.switch-light.switch-candy input:checked ~ span span:nth-child(2),
+.switch-candy input:checked + label {
+  color: $background-gray;
+}
+
+.switch-candy a {
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+  background-color: #70c66b;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+}
+
+.switch-candy-blue a {
+  background-color: #38a3d4;
+}
+
+.switch-candy-yellow a {
+  background-color: #f5e560;
+}

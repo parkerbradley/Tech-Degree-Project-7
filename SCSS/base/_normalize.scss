@@ -1,3 +1,6 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
 * {
   box-sizing: border-box;
 }
@@ -11,4 +14,13 @@ html {
 body {
   margin: 0;
   background-color: $white;
+}
+
+.chart {
+  padding-left: $body-space-mobile;
+  padding-right: $body-space-mobile;
+  @include tablet {
+    padding-left: $body-space;
+    padding-right: $body-space;
+  }
 }

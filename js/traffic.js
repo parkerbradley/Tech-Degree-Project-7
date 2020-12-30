@@ -25,6 +25,8 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
+      responsive: true,
+      maintainAspectRatio: true,
       aspectRatio: 3.8,
       scales: {
         scaleLabel: {
@@ -73,6 +75,8 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
+      responsive: true,
+      maintainAspectRatio: true,
       aspectRatio: 1.5,
       scales: {
         scaleLabel: {
@@ -128,6 +132,8 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
+      responsive: true,
+      maintainAspectRatio: true,
       aspectRatio: 1.5,
       scales: {
         scaleLabel: {

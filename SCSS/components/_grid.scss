@@ -1,3 +1,6 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
 main,
 .summary-stats,
 .social-stats,
@@ -5,19 +8,22 @@ main,
   display: grid;
 }
 
-main {
-  grid-template-columns: 75px auto;
-}
-
 .summary-stats {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(minmax(320px, 1fr));
 }
 
 .social-stats {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-column-gap: 40px;
 }
 
 .member-activity {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-column-gap: 1px;
+}
+
+@include tablet {
+  main {
+    grid-template-columns: 75px minmax(0, 1fr);
+  }
 }

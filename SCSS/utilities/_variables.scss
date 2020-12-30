@@ -13,10 +13,11 @@ $primary-font: #5A5A5A;
 
 //----------- Margin & Padding -----------//
 $body-space: 30px;
+$body-space-mobile: ($body-space * .5);
 
 //----------- Font Sizes -----------//
 $primary-font-size: 14px;
 
 //----------- Font Sizes -----------//
 $border: #DDDDDD;
-$border-style: 2px solid $border;
+$border-style: 1px solid $border;

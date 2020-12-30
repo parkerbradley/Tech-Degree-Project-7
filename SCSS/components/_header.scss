@@ -24,7 +24,10 @@ header {
 
 .notification-bell {
   position: relative;
-  margin-right: $body-space;
+  margin-right: $body-space-mobile;
+  @include tablet {
+    margin-right: $body-space;
+  }
 }
 .notified {
   position: absolute;
