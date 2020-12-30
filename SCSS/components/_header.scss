@@ -15,11 +15,17 @@ header {
 }
 
 .logo-text {
-  font-size: 24px;
+  font-size: 16px;
+  @include tablet {
+    font-size: 24px;
+  }
 }
 
 .notification {
-  height: 25px;
+  height: 15px;
+  @include tablet {
+    height: 25px;
+  }
 }
 
 .notification-bell {
@@ -41,13 +47,19 @@ header {
   border-left: solid 2px $primary-dark;
 }
 
-.profile-image {
-  margin-right: 10px;
+.user-image {
+  margin-right: 0;
+  @include tablet {
+    margin-right: 15px;
+  }
 }
 
 .logo-text,
 .profile {
-  padding-left: $body-space;
+  padding-left: $body-space-mobile;
+  @include tablet {
+    padding-left: $body-space;
+  }
 }
 
 .logo-text,
@@ -56,9 +68,14 @@ header {
 }
 
 .user-name {
-  font-size: 16px;
+  font-size: 13px;
+  text-align: right;
 }
 
 .notification-area {
-  padding-right: $body-space;
+  padding-left: 80px;
+  padding-right: $body-space-mobile;
+  @include tablet {
+    padding-right: $body-space;
+  }
 }

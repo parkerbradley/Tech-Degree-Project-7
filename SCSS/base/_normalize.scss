@@ -16,7 +16,24 @@ body {
   background-color: $white;
 }
 
-.chart {
+//----------- Spacing -----------//
+
+//--- Left Only ---//
+
+
+//--- Right Only ---//
+
+
+//--- Left & Right ---//
+.tab,
+.search,
+.chart,
+.feed,
+.column h2,
+.message-user,
+.message-user input,
+.message-user textarea,
+.message-user button {
   padding-left: $body-space-mobile;
   padding-right: $body-space-mobile;
   @include tablet {

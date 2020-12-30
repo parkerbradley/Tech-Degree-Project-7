@@ -27,7 +27,7 @@ var chart = new Chart(ctx, {
     options: {
       responsive: true,
       maintainAspectRatio: true,
-      aspectRatio: 3.8,
+      aspectRatio: 2,
       scales: {
         scaleLabel: {
           fontColor: '#ACACAC'

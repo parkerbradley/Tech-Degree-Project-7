@@ -9,21 +9,23 @@ main,
 }
 
 .summary-stats {
-  grid-template-columns: repeat(minmax(320px, 1fr));
+  grid-template-columns: repeat(minmax(290px, 1fr));
 }
 
 .social-stats {
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-column-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  @include tablet {
+    grid-column-gap: 40px;
+  }
 }
 
 .member-activity {
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-column-gap: 1px;
 }
 
 @include tablet {
   main {
-    grid-template-columns: 75px minmax(0, 1fr);
+    grid-template-columns: 75px minmax(290px, 1fr);
   }
 }
