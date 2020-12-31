@@ -14,7 +14,7 @@ var chart = new Chart(ctx, {
             borderWidth: 1,
             data: [20, 37, 17, 48, 39, 42, 51, 34, 48, 50, 55, 43],
             lineTension: 0,
-            pointRadius: 6,
+            pointRadius: 3,
             pointBorderColor: '#6C70BE',
             pointBorderWidth: 2,
             pointBackgroundColor: '#fff',
@@ -27,7 +27,7 @@ var chart = new Chart(ctx, {
     options: {
       responsive: true,
       maintainAspectRatio: true,
-      aspectRatio: 2,
+      aspectRatio: 2.5,
       scales: {
         scaleLabel: {
           fontColor: '#ACACAC'

@@ -2,7 +2,7 @@
 @import '../utilities/mixins';
 
 //----------- Tab & Search Area -----------//
-.sidenav,
+
 .dashboard {
   @include tablet {
     padding-bottom: $body-space;
@@ -10,14 +10,16 @@
 }
 
 .sidenav {
-  @include flex-between;
+  @include flex-around;
+  @include desktop {
+    display: block;
+  }
 }
 
 .sidenav-item {
   display: inline-block;
   padding: $body-space-mobile;
-
-  @include tablet {
+  @include desktop {
     display: block;
     padding: 22px;
   }
@@ -26,18 +28,18 @@
 .sidenav-item img{
   opacity: 70%;
   width: 40px;
-  @include tablet {
+  @include desktop {
     width: auto;
   }
 }
 
-.sidenav-item:first-child {
-  border-left: 2px solid #9EE08B;
-}
-
-.sidenav-item:first-child img {
-  opacity: 100%;
-}
+// .sidenav-item:first-child {
+//   border-left: 2px solid #9EE08B;
+// }
+//
+// .sidenav-item:first-child img {
+//   opacity: 100%;
+// }
 
 //----------- Tab & Search Area -----------//
 .tab-and-search {
@@ -133,11 +135,13 @@ canvas {
 
 
 
-@include tablet {
-  .controls {
+.controls {
+  padding-bottom: $body-space-mobile;
+  @include flex-around;
+  @include tablet {
     width: 350px;
-    display: flex;
-    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -189,11 +193,6 @@ canvas {
   }
 }
 
-.social-container {
-  padding-left: $body-space-mobile;
-  padding-right: $body-space-mobile;
-}
-
 .social-card {
   display: inline-flex;
   align-items: center;
@@ -220,6 +219,10 @@ canvas {
     margin-right: auto;
     margin-bottom: 0;
     color: $white;
+    @include tablet {
+      width: 45px;
+      height: 45px;
+    }
   }
   @include tablet {
     width: 100px;
@@ -281,9 +284,14 @@ canvas {
   padding-top: ($body-space * .5);
   padding-bottom: ($body-space * .5);
   border-bottom: $border-style;
+  display: flex;
+  align-items: center;
+  height: 80px;
   @include tablet {
-    display: flex;
-    align-items: center;
+    height: 80px;
+  }
+  p {
+    padding: 0;
   }
 }
 
@@ -293,24 +301,45 @@ canvas {
 
 .feed-item:last-of-type {
   border: none;
-  padding-bottom: $body-space-mobile;
-  @include tablet {
-    padding-bottom: $body-space;
-  }
 }
 
 .feed-item-text {
   width: 100%;
-  height: 35px;
-  @include tablet {
+  padding-left: $body-space-mobile;
+  @include desktop {
     @include flex-between;
+    padding-left: 0;
+  }
+}
+
+.feed-item-detail {
+  font-size: 14px;
+  font-weight: 500;
+  @include desktop {
+    font-size: 16px;
+    font-weight: 300;
   }
 }
 
 .feed-subtext,
-.feed-item-right {
+.feed-item-right,
+.fa-chevron-right {
   color: $primary-font;
   font-size: 13px;
+}
+
+.member-recent .feed-item-right {
+  display: none;
+  @include desktop {
+    display: inline;
+  }
+}
+
+.member-new .feed-item-right {
+  padding-top: 10px;
+  @include desktop {
+    padding-top: 0;
+  }
 }
 
 // --- activity forms

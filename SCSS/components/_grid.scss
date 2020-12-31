@@ -9,22 +9,23 @@ main,
 }
 
 .summary-stats {
-  grid-template-columns: repeat(minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, .5fr));
 }
 
 .social-stats {
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-row-gap: 40px;
   @include tablet {
     grid-column-gap: 40px;
   }
 }
 
 .member-activity {
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, .5fr));
   grid-column-gap: 1px;
 }
 
-@include tablet {
+@include desktop {
   main {
     grid-template-columns: 75px minmax(290px, 1fr);
   }
