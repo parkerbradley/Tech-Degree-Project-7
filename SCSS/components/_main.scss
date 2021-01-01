@@ -95,6 +95,7 @@
 //----------- Alert -----------//
 .alerts {
   margin: $body-space-mobile;
+  margin-bottom: 0;
   padding: 15px;
   height: auto;
   border-radius: 5px;
@@ -104,12 +105,15 @@
   background-color: $primary-color;
   @include tablet {
     margin: $body-space;
+    margin-bottom: 0;
   }
-}
-
-.alerts p {
-  padding: 0px;
-  margin: 0px;
+  p {
+    padding: 0px;
+    margin: 0px;
+  }
+  a {
+    cursor: pointer;
+  }
 }
 
 //----------- Charts & Period Toggles -----------//
@@ -123,17 +127,17 @@ canvas {
 }
 
 // --- Traffic
-@include tablet {
-  .chart-controls {
+.chart-controls {
+  padding-top: $body-space-mobile;
+  @include tablet {
     @include flex-between;
+    padding-top: $body-space;
   }
 }
 
 .controls h3 {
   display: inline;
 }
-
-
 
 .controls {
   padding-bottom: $body-space-mobile;
@@ -143,6 +147,15 @@ canvas {
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+
+.control-metric {
+  padding: 5px 14.5px 5px 14.5px;
+  border-radius: 14.5px;
+}
+
+.chosen {
+  background-color: $notification;
 }
 
 .chart {

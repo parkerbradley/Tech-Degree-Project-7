@@ -17,7 +17,7 @@
       <div class="notification-area">
         <div class="notification-bell">
           <img src="icons/icon-bell.svg" class="notification" alt="notification bell">
-          <span class="notified">•</span>
+          <span class="notified" id="notified"><i class="fas fa-circle"></i></span>
         </div>
         <div class="profile">
           <img src="images/IMG_0918.jpeg" class ="user-image profile-image" alt="user profile image">
@@ -41,20 +41,20 @@
               <input type="text" name="search" id="search" placeholder="Search...">
             </div>
         </div>
-        <div class="alerts">
+        <div class="alerts" id="alert">
           <span class="alert-text"><span class="bold">Alert</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-          <span class="alert-close bold">x</span>
+          <a class="alert-close bold" id="close"><i class="fas fa-times"></i></a>
         </div>
         <div class="chart">
           <div class="chart-controls">
             <div class="chart-title">
               <h2>TRAFFIC</h2>
             </div>
-            <div class="controls">
-              <h3 class="control-metric">Hourly</h3>
-              <h3 class="control-metric">Daily</h3>
-              <h3 class="control-metric">Weekly</h3>
-              <h3 class="control-metric">Monthly</h3>
+            <div class="controls" id="controls">
+              <h3 class="control-metric" id="hourly">Hourly</h3>
+              <h3 class="control-metric" id="daily">Daily</h3>
+              <h3 class="control-metric" id="weekly">Weekly</h3>
+              <h3 class="control-metric" id="monthly">Monthly</h3>
             </div>
           </div>
           <div class="chart-container">
@@ -265,7 +265,9 @@
     </main>
     <footer>
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-      <script src="js/traffic.js"></script>
+      <script src="js/app.js"></script>
+      <!-- <script src="js/charts.js"></script> -->
+      <script src="js/charts-new.js"></script>
     </footer>
   </body>
 </html>
