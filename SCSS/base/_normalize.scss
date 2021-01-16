@@ -7,7 +7,7 @@
 
 html {
   max-width: 1500px;
-  background-color: $header;
+  background-color: lighten($header, 30%);
   margin: auto;
 }
 
